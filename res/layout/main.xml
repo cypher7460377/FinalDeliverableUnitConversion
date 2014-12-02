@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+ <LinearLayout android:id="@+id/row01"
+ 	android:orientation="horizontal"
+ 	android:layout_width="fill_parent"
+ 	android:layout_height="wrap_content"
+ 	>   
+<EditText android:id="@+id/value01"
+	android:layout_width="0dp"
+	android:layout_weight="1"
+	android:layout_height="wrap_content"
+	android:hint="Enter first temperature"
+	android:contentDescription="First temperature"
+	/>
+
+<Spinner
+    android:id="@+id/unit01"
+    android:layout_width="112dp"
+    android:layout_height="44dp"
+    android:spinnerMode="dropdown" 
+    android:contentDescription="Temperature to convert from"
+    />
+
+</LinearLayout>
+ <LinearLayout android:id="@+id/row02"
+ 	android:orientation="horizontal"
+ 	android:layout_width="fill_parent"
+ 	android:layout_height="wrap_content"
+ 	>   
+<EditText android:id="@+id/value02"
+	android:layout_width="0dp"
+	android:layout_weight="1"
+	android:layout_height="wrap_content"
+	android:hint="Enter second temperature"
+	android:contentDescription="Second temperature"
+	/>
+
+<Spinner
+    android:id="@+id/unit02"
+    android:layout_width="110dp"
+    android:layout_height="42dp"
+    android:spinnerMode="dropdown" 
+    android:contentDescription="Temperature to convert to"
+    />
+
+</LinearLayout>
+
+ <Button
+     android:id="@+id/button1"
+     android:layout_width="wrap_content"
+     android:layout_height="31dp"
+     android:onClick="convertTemperature"
+     android:text="@string/convert"
+     android:textSize="10sp" 
+     android:contentDescription="Convert temperature"
+     />
+
+</LinearLayout>
