@@ -34,6 +34,13 @@ public class UnitConversion extends Activity implements OnItemSelectedListener
 
     }
 /*
+* I'm leaving this commented code in the project because it was originally part of the project. When I 
+* started testing there were numerous problems with the event handler and Android's test framework. I
+* believe it was probably something like a race condition. Android's activity manager move's very fast,
+* and I don't think this method was responding quickly enough. I took the code below and added a button
+* to the project to make the code more testable.
+*/
+/*
  	@Override
 	public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
 		int from = position, to;
